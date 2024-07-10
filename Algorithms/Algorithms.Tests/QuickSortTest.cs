@@ -14,72 +14,36 @@ public class Tests
         Assert.That(Enumerable.SequenceEqual(input, expected));
     }
 
-    // 3, 5, 4, 2, 6, 1
-    // p = 4
-    // lp = 1, rp = 5
-
-    // 3, 1, 4, 2, 6, 5
-    // lp = 4, rp = 3
-
-    // 3, 1, 4, 2, 6, 5
-
     public void QuickSort(int[] arr, int li = 0, int ri = int.MaxValue)
-    {
-        if (li > ri)
-            return;
-
-        ri = ri == int.MaxValue ? arr.Length - 1 : ri;
-
-        var lp = li;
-        var rp = ri;
-
-        var p = arr[lp + (rp - lp) / 2];
-
-        while (lp <= rp)
-        {
-            if (lp == rp)
-                Console.WriteLine("");
-
-            while (arr[lp] < p)
-                lp++;
-
-            while (arr[rp] > p) 
-                rp--;
-
-            if (lp <= rp)
-                (arr[lp], arr[rp]) = (arr[rp--], arr[lp++]);
-        }
-
-        QuickSort(arr, li, rp);
-        QuickSort(arr, lp, ri);
-    }
-
-    public void Sort(int[] arr, int li = 0, int ri = int.MaxValue)
     {
         if (li >= ri)
             return;
 
         ri = ri == int.MaxValue ? arr.Length - 1 : ri;
 
-        var len = ri - li;
-        var mi = li + len / 2;
-        var p = arr[mi];
-
-        var lp = li;
-        var rp = ri;
+        int lp = li;
+        int rp = ri;
+        int p = arr[li + (ri - li) / 2];
 
         while (lp < rp)
         {
-            while (arr[lp] <= p && lp < rp)
+            while (arr[lp] < p)
                 lp++;
 
-            while (arr[rp] >= p && lp < rp)
+            while (arr[rp] > p)
                 rp--;
 
-            (arr[lp], arr[rp]) = (arr[rp], arr[lp]);
+            if (lp < rp)
+                (arr[lp], arr[rp]) = (arr[rp--], arr[lp++]);
         }
 
-        Sort(arr, li, lp);
-        Sort(arr, lp + 1, ri);
+        if (lp == rp)
+        {
+            lp++;
+            rp--;
+        }
+
+        QuickSort(arr, li, rp);
+        QuickSort(arr, lp, ri);
     }
 }
