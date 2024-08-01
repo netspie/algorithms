@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Numerics;
 
 namespace Algorithms.Tests.Exercises;
@@ -13,7 +14,8 @@ public class NumberOfIslandsTests
     [Test]
     public void NumberOfIslandsTest()
     {
-        Assert.That(NumIslands(Grid) == 1);
+        var res = NumIslands(Grid);
+        Assert.That(res == 1);
     }
 
     public static int NumIslands(char[][] grid)
@@ -38,7 +40,12 @@ public class NumberOfIslandsTests
 
     public static Node? Build(char[][] grid, int x, int y, HashSet<(int x, int y)> visited)
     {
-        if (x >= 0 && x < grid.Length && y >= 0 && y < grid[x].Length && grid[x][y] == '1')
+        if (x >= 0 && 
+            x < grid.Length && 
+            y >= 0 && 
+            y < grid[x].Length && 
+            grid[x][y] == '1' &&
+            !visited.Contains((x, y)))
         {
             visited.Add((x, y));
 
