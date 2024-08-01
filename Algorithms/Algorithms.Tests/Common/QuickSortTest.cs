@@ -1,4 +1,6 @@
-namespace Algorithms.Tests;
+using System.Numerics;
+
+namespace Algorithms.Tests.Common;
 
 public class Tests
 {
@@ -8,13 +10,18 @@ public class Tests
     [TestCase(new[] { 1, 2, 3, 4, 5 }, new[] { 1, 2, 3, 4, 5 })]
     [TestCase(new[] { 3, 5, 4, 2, 6, 1 }, new[] { 1, 2, 3, 4, 5, 6 })]
     [TestCase(new[] { 5 }, new[] { 5 })]
+    [TestCase(new[] { 99, 97, 114, 114, 97, 99, 101 }, new[] { 97, 97, 99, 99, 101, 114, 114 })]
+    [TestCase(new[] { 97, 110, 97, 103, 114, 97, 109 }, new[] { 97, 97, 97, 103, 109, 110, 114 })]
+    [TestCase(new[] { 110, 97, 103, 97, 114, 97, 109 }, new[] { 97, 97, 97, 103, 109, 110, 114 })]
     public void QuickSortTest(int[] input, int[] expected)
     {
         QuickSort(input);
-        Assert.That(Enumerable.SequenceEqual(input, expected));
+        Assert.That(input.SequenceEqual(expected));
     }
 
-    public void QuickSort(int[] arr, int li = 0, int ri = int.MaxValue)
+    // https://code-maze.com/csharp-quicksort-algorithm/
+    public void QuickSort<T>(T[] arr, int li = 0, int ri = int.MaxValue)
+        where T : INumber<T>
     {
         if (li >= ri)
             return;
@@ -23,9 +30,9 @@ public class Tests
 
         int lp = li;
         int rp = ri;
-        int p = arr[li + (ri - li) / 2];
+        T p = arr[li + (ri - li) / 2];
 
-        while (lp < rp)
+        while (lp <= rp)
         {
             while (arr[lp] < p)
                 lp++;
@@ -33,14 +40,8 @@ public class Tests
             while (arr[rp] > p)
                 rp--;
 
-            if (lp < rp)
+            if (lp <= rp)
                 (arr[lp], arr[rp]) = (arr[rp--], arr[lp++]);
-        }
-
-        if (lp == rp)
-        {
-            lp++;
-            rp--;
         }
 
         QuickSort(arr, li, rp);
