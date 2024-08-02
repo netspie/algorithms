@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Numerics;
 
-namespace Algorithms.Tests.Exercises;
+namespace Algorithms.Tests.Exercises.Graphs;
 
 public class NumberOfIslandsTests
 {
@@ -10,7 +10,7 @@ public class NumberOfIslandsTests
         new[] { '1','1','0','1','0' },
         new[] { '1', '1', '0', '0', '0' },
         new[] { '0', '0', '0', '0', '0' } };
-    
+
     [Test]
     public void NumberOfIslandsTest()
     {
@@ -35,13 +35,13 @@ public class NumberOfIslandsTests
 
         return count;
     }
-
+    const int X = 3;
     public static void Build(char[][] grid, int x, int y, HashSet<(int x, int y)> visited)
     {
-        if (x >= 0 && 
-            x < grid.Length && 
-            y >= 0 && 
-            y < grid[x].Length && 
+        if (grid is [.. { Length: X }]) ;
+
+        if (x.IsInRangeOf(grid) &&
+            y.IsInRangeOf(grid[x]) &&
             grid[x][y] == '1' &&
             !visited.Contains((x, y)))
         {
@@ -53,4 +53,13 @@ public class NumberOfIslandsTests
                     Build(grid, dir.x, dir.y, visited);
         }
     }
+}
+
+public static class ArrayExtensions
+{
+    public static bool IsInRange<T>(this T[] arr, int i) =>
+        i >= 0 && i < arr.Length;
+
+    public static bool IsInRangeOf<T>(this int i, T[] arr) =>
+        i >= 0 && i < arr.Length;
 }

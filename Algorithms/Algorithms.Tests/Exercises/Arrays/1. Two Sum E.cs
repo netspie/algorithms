@@ -1,6 +1,4 @@
-using System.Numerics;
-
-namespace Algorithms.Tests.Exercises;
+namespace Algorithms.Tests.Exercises.Arrays;
 
 public class TwoSumTests
 {
