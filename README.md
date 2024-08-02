@@ -30,3 +30,8 @@ Props to the following platforms I use for scooping the essentials to a reasonbl
   
 
 ### Trees
+
+
+### Graphs 
+
+[200. Number of Islands](Algorithms/Algorithms.Tests/Exercises/Graphs/200.%20Number%20of%20Islands%20M.cs)
