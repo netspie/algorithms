@@ -16,6 +16,8 @@ Props to the following platforms I use for scooping the essentials to a reasonbl
 
 ### Trees
 
+[Depth First Search](Algorithms/Algorithms.Tests/Common/Trees/Search/TreeDepthFirstSearch.cs) (in-, pre-, post-order)
+
 ## Problems
 
 ### Arrays
