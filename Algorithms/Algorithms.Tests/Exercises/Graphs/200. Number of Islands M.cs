@@ -36,7 +36,7 @@ public class NumberOfIslandsTests
 
         return count;
     }
-    const int X = 3;
+    
     public static void Build(char[][] grid, int x, int y, HashSet<(int x, int y)> visited)
     {
         if (x.IsInRangeOf(grid) &&
