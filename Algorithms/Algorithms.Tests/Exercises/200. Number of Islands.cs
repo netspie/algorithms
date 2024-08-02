@@ -36,9 +36,7 @@ public class NumberOfIslandsTests
         return count;
     }
 
-    public record Node((int x, int y) Value, List<Node>? Children = null);
-
-    public static Node? Build(char[][] grid, int x, int y, HashSet<(int x, int y)> visited)
+    public static void Build(char[][] grid, int x, int y, HashSet<(int x, int y)> visited)
     {
         if (x >= 0 && 
             x < grid.Length && 
@@ -49,22 +47,10 @@ public class NumberOfIslandsTests
         {
             visited.Add((x, y));
 
-            var children = new List<Node>(capacity: 4);
-            if (!visited.Contains((x - 1, y)) && Build(grid, x - 1, y, visited) is Node nodeLeft)
-                children.Add(nodeLeft);
-
-            if (!visited.Contains((x, y + 1)) && Build(grid, x, y + 1, visited) is Node nodeBottom)
-                children.Add(nodeBottom);
-
-            if (!visited.Contains((x + 1, y)) && Build(grid, x + 1, y, visited) is Node nodeRight)
-                children.Add(nodeRight);
-
-            if (!visited.Contains((x, y - 1)) && Build(grid, x, y - 1, visited) is Node nodeTop)
-                children.Add(nodeTop);
-
-            return new Node((x, y), children);
+            var dirs = new (int x, int y)[] { (x - 1, y), (x, y + 1), (x + 1, y), (x, y - 1) };
+            foreach (var dir in dirs)
+                if (!visited.Contains(dir))
+                    Build(grid, dir.x, dir.y, visited);
         }
-
-        return null;
     }
 }
