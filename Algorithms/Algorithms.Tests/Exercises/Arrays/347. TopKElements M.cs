@@ -1,4 +1,4 @@
-namespace Algorithms.Tests.Exercises;
+namespace Algorithms.Tests.Exercises.Arrays;
 
 public class TopKElementsInListTests
 {
@@ -36,7 +36,7 @@ public class TopKElementsInListTests
         {
             if (frequency[i] is null)
                 continue;
-            
+
             for (int l = 0; l < frequency[i].Count; l++, j++)
                 result[j] = frequency[i][l];
         }

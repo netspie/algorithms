@@ -4,11 +4,11 @@ using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Algorithms.Tests.Exercises;
+namespace Algorithms.Tests.Exercises.Arrays;
 
 public class GroupAnagramsTests
 {
-    
+
 
     [Test]
     public void GroupAnagramTest()

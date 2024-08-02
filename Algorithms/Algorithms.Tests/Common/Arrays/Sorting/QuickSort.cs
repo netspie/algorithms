@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Numerics;
 
-namespace Algorithms.Tests.Common;
+namespace Algorithms.Tests.Common.Arrays.Sorting;
 
 public class Tests
 {

@@ -1,6 +1,6 @@
 using System.Numerics;
 
-namespace Algorithms.Tests.Common;
+namespace Algorithms.Tests.Common.Arrays.Sorting;
 
 public class BucketSortTests
 {
@@ -20,7 +20,7 @@ public class BucketSortTests
     }
 
     // https://www.geeksforgeeks.org/bucket-sort-2/
-    public void BucketSort(int[] arr) 
+    public void BucketSort(int[] arr)
     {
         var min = arr.Min();
         var max = arr.Max();
@@ -39,14 +39,14 @@ public class BucketSortTests
         if (diff == 0)
             return;
 
-        var range = (int) Math.Round(diff / (double) bucketCount);
+        var range = (int)Math.Round(diff / (double)bucketCount);
         var buckets = new List<int>[bucketCount];
         for (int i = 0; i < bucketCount; i++)
             buckets[i] = new(range);
 
         for (int i = 0; i < arr.Length; i++)
         {
-            var bi = ((arr[i] - min) * (bucketCount - 1)) / diff;
+            var bi = (arr[i] - min) * (bucketCount - 1) / diff;
 
             buckets[bi] ??= new(range);
             buckets[bi].Add(arr[i]);

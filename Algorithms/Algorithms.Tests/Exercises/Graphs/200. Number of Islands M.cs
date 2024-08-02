@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics;
 using System.Numerics;
 
@@ -38,8 +39,6 @@ public class NumberOfIslandsTests
     const int X = 3;
     public static void Build(char[][] grid, int x, int y, HashSet<(int x, int y)> visited)
     {
-        if (grid is [.. { Length: X }]) ;
-
         if (x.IsInRangeOf(grid) &&
             y.IsInRangeOf(grid[x]) &&
             grid[x][y] == '1' &&
