@@ -26,7 +26,7 @@ Useful resourses & platforms:
 
 - Contains Duplicate - [LC](https://leetcode.com/problems/contains-duplicate/description/), [NC](https://youtu.be/3OamzN90kPg) - Brute Force | Sort First | HashSet
 
-- Valid Anagram - [Code](Algorithms/Algorithms.Tests/Exercises/Arrays/242.%20Valid%20Anagram%20E.cs), [LC](https://leetcode.com/problems/valid-anagram), [NC](https://youtu.be/9UtInBqnCgA) - Hashmap | Sort
+- Valid Anagram - [Code](Algorithms/Algorithms.Tests/Exercises/Arrays/242.%20Valid%20Anagram%20E.cs), [LC](https://leetcode.com/problems/valid-anagram), [NC](https://youtu.be/9UtInBqnCgA) - Char Count Hashmap | Sort
 
 - Two Sum - [Code](Algorithms/Algorithms.Tests/Exercises/Arrays/1.%20Two%20Sum%20E.cs), [LC](https://leetcode.com/problems/two-sum/description/), [NC](https://youtu.be/KLlXCFG5TnA) - Brute Force | Sort & Binary Search | Target & Element Diff
 
