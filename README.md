@@ -3,20 +3,22 @@
 This is my private notebook for learning algorithms and data structures as well as various leetcode problems.
 
 Useful resourses & platforms:
-- [frontendmasters.com/courses/algorithms](frontendmasters.com/courses/algorithms)
-- [neetcode.io](neetcode.io)
+- [frontendmasters.com/courses/algorithms](https://frontendmasters.com/courses/algorithms)
+- [neetcode.io](https://neetcode.io)
 
 ## Common Algorithms
 
 ### Arrays
 
-- Quick Sort - [Code](Algorithms/Algorithms.Tests/Common/Arrays/Sorting/QuickSort.cs)  
+- Quick Sort - [Code](Algorithms/Algorithms.Tests/Common/Arrays/Sorting/QuickSort.cs), [FM](https://frontendmasters.com/courses/algorithms/quicksort-algorithm/)
 
-- Bucket Sort - [Code](Algorithms/Algorithms.Tests/Common/Arrays/Sorting/BucketSort.cs)
+- Bucket Sort - [Code](Algorithms/Algorithms.Tests/Common/Arrays/Sorting/BucketSort.cs), [YT](https://youtu.be/7mahJ1axrR8)
 
 ### Trees
 
-- Depth First Search - [Code](Algorithms/Algorithms.Tests/Common/Trees/Search/TreeDepthFirstSearch.cs)
+- Depth First Search - [Code](Algorithms/Algorithms.Tests/Common/Trees/Search/TreeDepthFirstSearch.cs), [FM](https://frontendmasters.com/courses/algorithms/tree-traversals/)
+
+- Breadth First Search - [Code](Algorithms/Algorithms.Tests/Common/Trees/Search/TreeBreadthFirstSearch.cs), [FM](https://frontendmasters.com/courses/algorithms/breadth-first-search/)
 
 ## Problems
 
@@ -46,4 +48,4 @@ Useful resourses & platforms:
 
 ### Graphs
 
-- Number of Islands - [Code](Algorithms/Algorithms.Tests/Exercises/Graphs/200.%20Number%20of%20Islands%20M.cs), [LC](https://leetcode.com/problems/number-of-islands), [NC](https://youtu.be/3OamzN90kPg)
+- Number of Islands - [Code](Algorithms/Algorithms.Tests/Exercises/Graphs/200.%20Number%20of%20Islands%20M.cs), [LC](https://leetcode.com/problems/number-of-islands), [NC](https://youtu.be/pV2kpPD66nE)
