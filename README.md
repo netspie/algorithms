@@ -8,15 +8,15 @@ Props to the following platforms I use for scooping the essentials to a reasonbl
 
 ## Common Algorithms
 
-### Arrays
+### --- Arrays ---
 
-[Quick Sort](Algorithms/Algorithms.Tests/Common/Arrays/Sorting/QuickSort.cs)  
-  
-[Bucket Sort](Algorithms/Algorithms.Tests/Common/Arrays/Sorting/BucketSort.cs)
+- Quick Sort - [Code](Algorithms/Algorithms.Tests/Common/Arrays/Sorting/QuickSort.cs)  
 
-### Trees
+- Bucket Sort - [Code](Algorithms/Algorithms.Tests/Common/Arrays/Sorting/BucketSort.cs)
 
-[Depth First Search](Algorithms/Algorithms.Tests/Common/Trees/Search/TreeDepthFirstSearch.cs) (in-, pre-, post-order)
+### --- Trees ---
+
+- Depth First Search - [Code](Algorithms/Algorithms.Tests/Common/Trees/Search/TreeDepthFirstSearch.cs)
 
 ## Problems
 
