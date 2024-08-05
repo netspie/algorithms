@@ -24,19 +24,19 @@ Useful resourses & platforms:
 
 ### Arrays
 
-- Contains Duplicate - [LC](https://leetcode.com/problems/contains-duplicate/description/), [NC](https://youtu.be/3OamzN90kPg)
+- Contains Duplicate - [LC](https://leetcode.com/problems/contains-duplicate/description/), [NC](https://youtu.be/3OamzN90kPg) - Brute Force | Sort First | HashSet
 
-- Valid Anagram - [Code](Algorithms/Algorithms.Tests/Exercises/Arrays/242.%20Valid%20Anagram%20E.cs), [LC](https://leetcode.com/problems/valid-anagram), [NC](https://youtu.be/9UtInBqnCgA)
+- Valid Anagram - [Code](Algorithms/Algorithms.Tests/Exercises/Arrays/242.%20Valid%20Anagram%20E.cs), [LC](https://leetcode.com/problems/valid-anagram), [NC](https://youtu.be/9UtInBqnCgA) - Hashmap | Sort
 
-- Two Sum - [Code](Algorithms/Algorithms.Tests/Exercises/Arrays/1.%20Two%20Sum%20E.cs), [LC](https://leetcode.com/problems/two-sum/description/), [NC](https://youtu.be/KLlXCFG5TnA)
+- Two Sum - [Code](Algorithms/Algorithms.Tests/Exercises/Arrays/1.%20Two%20Sum%20E.cs), [LC](https://leetcode.com/problems/two-sum/description/), [NC](https://youtu.be/KLlXCFG5TnA) - Brute Force | Sort & Binary Search | Target & Element Diff
 
-- Group Anagrams - [Code](Algorithms/Algorithms.Tests/Exercises/Arrays/49.%20Group%20Anagrams%20M.cs), [LC](https://leetcode.com/problems/group-anagrams), [NC](https://youtu.be/vzdNOK2oB2E)
+- Group Anagrams - [Code](Algorithms/Algorithms.Tests/Exercises/Arrays/49.%20Group%20Anagrams%20M.cs), [LC](https://leetcode.com/problems/group-anagrams), [NC](https://youtu.be/vzdNOK2oB2E) - Sort and Hashmap | Count Array and Hashmap
   
-- Top Frequent K Elements - [Code](Algorithms/Algorithms.Tests/Exercises/Arrays/347.%20TopKElements%20M.cs), [LC](https://leetcode.com/problems/top-k-frequent-elements), [NC](https://youtu.be/YPTqKIgVk-k)
+- Top Frequent K Elements - [Code](Algorithms/Algorithms.Tests/Exercises/Arrays/347.%20TopKElements%20M.cs), [LC](https://leetcode.com/problems/top-k-frequent-elements), [NC](https://youtu.be/YPTqKIgVk-k) - Hashmap/Sort/Get K biggest | Bucket Sort
 
-- Encode and Decode Strings - [LC](https://leetcode.com/problems/encode-and-decode-strings), [NC](https://youtu.be/B1k_sxOSgv8)
+- Encode and Decode Strings - [LC](https://leetcode.com/problems/encode-and-decode-strings), [NC](https://youtu.be/B1k_sxOSgv8) - Connect words (!) |  Delimiter between words (!) | Word Length at Start
 
-- Products of Array Discluding Self - [LC](https://leetcode.com/problems/product-of-array-except-self), [NC](https://youtu.be/bNvIQI2wAjk)
+- Products of Array Discluding Self - [LC](https://leetcode.com/problems/product-of-array-except-self), [NC](https://youtu.be/bNvIQI2wAjk) - Brute Force | Few iterations and division | Prefix and Postfix arrays | Prefix array and calculate Postfix on reverse
 
 - Valid Sudoku - [LC](https://leetcode.com/problems/valid-sudoku), [NC](https://youtu.be/TjFXEUCMqI8)
 
