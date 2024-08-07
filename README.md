@@ -20,6 +20,12 @@ Useful resourses & platforms:
 - Trees
 - Undirected Graph
 
+*Graph Represantations*
+
+- Edge List - V=[0, 1, 2], E=[(0, 1), (1, 2)]  
+- Adjacency Matrix
+- Adjacency List - Edge List + Adjacency Matrix - List of Singly Linked Edge Lists
+
 ## Common Algorithms
 
 ### Arrays
