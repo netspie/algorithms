@@ -22,9 +22,9 @@ Useful resourses & platforms:
 
 *Graph Represantations*
 
-- Edge List - V=[0, 1, 2], E=[(0, 1), (1, 2)]  
-- Adjacency Matrix
-- Adjacency List - Edge List + Adjacency Matrix - List of Singly Linked Edge Lists
+- Edge List - Vertices and Edge Lists
+- Adjacency Matrix - Matrix containing fields with 1 or 0 telling if edge exists
+- Adjacency List - Edge List + Adjacency Matrix - List of Vertices pointing to Singly Linked Edge Lists
 
 ## Common Algorithms
 
