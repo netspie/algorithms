@@ -17,8 +17,9 @@ Useful resourses & platforms:
 
 *Special Graphs*
 
-- Trees
+- Trees - In-tree and Out-Tree
 - Undirected Graph
+- Directed Acyclic Graph (DAG)
 
 *Graph Represantations*
 
