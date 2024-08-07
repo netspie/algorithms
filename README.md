@@ -6,6 +6,20 @@ Useful resourses & platforms:
 - [frontendmasters.com/courses/algorithms](https://frontendmasters.com/courses/algorithms)
 - [neetcode.io](https://neetcode.io)
 
+## Data Structures
+
+### Graphs
+
+*High Level Categorization*
+
+- Directed Graph / Digraph
+- Undirected Graph
+
+*Special Graphs*
+
+- Trees
+- Undirected Graph
+
 ## Common Algorithms
 
 ### Arrays
