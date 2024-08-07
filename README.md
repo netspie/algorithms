@@ -20,11 +20,13 @@ Useful resourses & platforms:
 - Trees - In-tree and Out-Tree
 - Undirected Graph
 - Directed Acyclic Graph (DAG)
+- Bipartite Graph
+- Complete Graph
 
 *Graph Represantations*
 
 - Edge List - Vertices and Edge Lists
-- Adjacency Matrix - Matrix containing fields with 1 or 0 telling if edge exists
+- Adjacency Matrix - Matrix containing values with degree
 - Adjacency List - Edge List + Adjacency Matrix - List of Vertices pointing to Singly Linked Edge Lists
 
 ## Common Algorithms
